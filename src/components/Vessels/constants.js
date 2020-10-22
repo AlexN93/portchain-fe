@@ -1,0 +1,1 @@
+export const FETCH_VESSELS = 'src/components/Vessels/FETCH_VESSELS';
