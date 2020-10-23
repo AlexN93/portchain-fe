@@ -1,7 +1,6 @@
+import { PORTCHAIN_API_URL } from '../../config';
 import { FETCH_PORTS } from './constants';
 import axios from 'axios';
-
-const apiUrl = 'http://localhost:8080/api';
 
 export const portsLoadCallAction = (ports) => {
     return {
@@ -12,7 +11,7 @@ export const portsLoadCallAction = (ports) => {
 
 export const portsLoadAllCallAction = (query) => {
     return (dispatch) => {
-        return axios.get(`${apiUrl}/ports${query}`)
+        return axios.get(`${PORTCHAIN_API_URL}/ports${query}`)
             .then(response => dispatch(portsLoadCallAction(response.data)))
             .catch(error => {
                 console.log(error);
