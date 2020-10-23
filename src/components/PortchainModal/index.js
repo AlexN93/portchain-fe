@@ -14,7 +14,7 @@ function PortchainModal({content, open = false, handleClose}) {
             maxWidth={false}
         >
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-                Title
+                Statistics
             </DialogTitle>
             <DialogContent dividers>
                 {content}

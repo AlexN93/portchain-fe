@@ -24,7 +24,6 @@ function Ports({ports, portsLoadAll}) {
             setModalContent(null);
             return;
         }
-        console.log(data);
         setModalContent(<PortchainAreaChart
             data={data.percentiles}
             title={`Port call durations`}
